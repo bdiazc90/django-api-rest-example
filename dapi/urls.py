@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from api1 import urls as api1_urls
+from api2 import urls as api2_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api1/', include(api1_urls)),
+    path('api2/', include(api2_urls)),
 ]
